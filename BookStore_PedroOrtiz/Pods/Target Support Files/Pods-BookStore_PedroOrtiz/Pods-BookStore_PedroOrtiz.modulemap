@@ -1,0 +1,6 @@
+framework module Pods_BookStore_PedroOrtiz {
+  umbrella header "Pods-BookStore_PedroOrtiz-umbrella.h"
+
+  export *
+  module * { export * }
+}
