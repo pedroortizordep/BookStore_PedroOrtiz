@@ -9,13 +9,27 @@ import Foundation
 
 class BookDetailViewModel {
     
-    private let book: Book
+    private let book: BookModel
     
-    init(book: Book) {
+    init(book: BookModel) {
         self.book = book
     }
     
-    func getBook() -> Book {
+    func getBook() -> BookModel {
         return self.book
+    }
+    
+    func unfavoriteBook(bookModel: BookModel) {
+        DataManager.shared.delete(bookModel: bookModel)
+        DataManager.shared.save()
+    }
+    
+    func favoriteBook(bookModel: BookModel) {
+        DataManager.shared.createBookCoreDataModel(bookModel: bookModel)
+        DataManager.shared.save()
+    }
+    
+    func existFavoriteBook(bookModel: BookModel) -> Bool {
+        return DataManager.shared.exists(bookModel: bookModel)
     }
 }

@@ -13,7 +13,7 @@ class BookDetailViewController: UIViewController, ViewConfiguration {
     private var customView: BookDetailView = BookDetailView()
     private var viewModel: BookDetailViewModel
     
-    init(book: Book) {
+    init(book: BookModel) {
         viewModel = BookDetailViewModel(book: book)
         super.init(nibName: nil, bundle: nil)
     }
@@ -39,21 +39,39 @@ class BookDetailViewController: UIViewController, ViewConfiguration {
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(
-                barButtonSystemItem: .bookmarks,
+                image: UIImage(named: "favorite"), style: .plain,
                 target: self,
                 action: #selector(favoriteBook)
             )
+            
         ]
         
+        let bookModel = viewModel.getBook()
+        
         navigationItem.rightBarButtonItems?.forEach({ item in
-            item.tintColor = .orange
+            
+            if viewModel.existFavoriteBook(bookModel: bookModel) {
+                item.tintColor = .orange
+            } else {
+                item.tintColor = .lightGray
+            }
         })
         
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     @objc func favoriteBook() {
+        let bookModel = viewModel.getBook()
         
+        navigationItem.rightBarButtonItems?.forEach({ item in
+            if item.tintColor == .orange {
+                item.tintColor = .lightGray
+                viewModel.unfavoriteBook(bookModel: bookModel)
+            } else {
+                item.tintColor = .orange
+                viewModel.favoriteBook(bookModel: bookModel)
+            }
+        })
     }
     
     func addViews() {

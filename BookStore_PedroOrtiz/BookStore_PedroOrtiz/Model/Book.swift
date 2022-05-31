@@ -8,10 +8,10 @@
 import Foundation
 
 struct BookResponse: Codable {
-    let items: [Book]
+    let items: [BookModel]
 }
 
-struct Book: Codable {
+struct BookModel: Codable {
     let volumeInfo: VolumeInfo
     let saleInfo: SaleInfo
 }

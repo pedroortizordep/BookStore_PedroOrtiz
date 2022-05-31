@@ -26,7 +26,7 @@ class BookCell: UICollectionViewCell, ViewConfiguration {
         return imageView
     }()
     
-    func configure(book: Book) {
+    func configure(book: BookModel) {
         initialize()
         
         let urlString = book.volumeInfo.imageLinks.thumbnail

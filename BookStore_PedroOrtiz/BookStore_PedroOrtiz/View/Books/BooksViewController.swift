@@ -28,7 +28,33 @@ class BooksViewController: UIViewController, ViewConfiguration {
     
     private func setupNavigation() {
         navigationItem.title = "Books"
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(
+                image: UIImage(named: "favorite"), style: .plain,
+                target: self,
+                action: #selector(showFavoriteBooks)
+            )
+        ]
+        
+        navigationItem.rightBarButtonItems?.forEach({ item in
+            item.tintColor = .lightGray
+        })
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    @objc func showFavoriteBooks() {
+        navigationItem.rightBarButtonItems?.forEach({ item in
+            if item.tintColor == .lightGray {
+                viewModel.getFavoriteBooks()
+                item.tintColor = .orange
+            } else {
+                viewModel.cleanBooks()
+                viewModel.getBooks()
+                item.tintColor = .lightGray
+            }
+        })
     }
     
     func bindBooks() {
@@ -106,7 +132,6 @@ extension BooksViewController: UIScrollViewDelegate {
         if position > self.customView.collectionViewBooks.contentSize.height - 100 - scrollView.frame.size.height {
             
             if self.viewModel.isPaginating { return }
-            
             self.viewModel.getBooks(pagination: true)
         }
     }

@@ -69,7 +69,7 @@ class BookDetailView: UIView, ViewConfiguration {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView(book: Book) {
+    func setupView(book: BookModel) {
         initialize()
         
         let urlString = book.volumeInfo.imageLinks.thumbnail

@@ -11,7 +11,7 @@ class BookViewModel {
     
     private var booksService: BooksService
     
-    private(set) var books: [Book] {
+    private(set) var books: [BookModel] {
         didSet {
             self.bindBooksToController()
         }
@@ -41,7 +41,26 @@ class BookViewModel {
         }
     }
     
-    func getBook(index: Int) -> Book {
+    func cleanBooks() {
+        self.booksService.cleanService()
+        self.books = []
+    }
+    
+    func getBook(index: Int) -> BookModel {
         return books[index]
+    }
+    
+    func getFavoriteBooks() {
+        booksService.isPaginating = true
+        
+        let favoritesData: [Book] = DataManager.shared.getBooksData()
+        var favoriteBooks: [BookModel] = []
+        
+        for data in favoritesData {
+            let book = BookModel(volumeInfo: VolumeInfo(title: data.title ?? "", authors: [data.authors ?? ""], description: data.bookDescription, imageLinks: ImageLinks(thumbnail: data.thumbnail ?? "")), saleInfo: SaleInfo(buyLink: data.buyLink))
+            favoriteBooks.append(book)
+        }
+        
+        self.books = favoriteBooks
     }
 }

@@ -15,6 +15,11 @@ class BooksService {
     
     var isPaginating = false
     
+    func cleanService() {
+        startIndex = 0
+        isPaginating = false
+    }
+    
     func getBooks(pagination: Bool = false, completion: @escaping (Result<BookResponse, Error>) -> ()) {
         
         if pagination {
