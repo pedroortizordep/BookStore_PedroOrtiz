@@ -8,26 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		438F06B7BA2E028FE646A20B /* Pods_BookStore_PedroOrtiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75169A8166FC1CACDE7850EB /* Pods_BookStore_PedroOrtiz.framework */; };
+		A86272062845453400A2D282 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86272052845453400A2D282 /* BookDetailViewController.swift */; };
+		A86272082845453E00A2D282 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86272072845453E00A2D282 /* BookDetailView.swift */; };
+		A862720A284569ED00A2D282 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8627209284569ED00A2D282 /* BookDetailViewModel.swift */; };
 		A875074728428F630030A6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875074628428F630030A6F6 /* AppDelegate.swift */; };
 		A875074928428F630030A6F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875074828428F630030A6F6 /* SceneDelegate.swift */; };
-		A875074B28428F630030A6F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A875074A28428F630030A6F6 /* ViewController.swift */; };
 		A875074E28428F630030A6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875074C28428F630030A6F6 /* Main.storyboard */; };
 		A875075028428F650030A6F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A875074F28428F650030A6F6 /* Assets.xcassets */; };
 		A875075328428F650030A6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A875075128428F650030A6F6 /* LaunchScreen.storyboard */; };
+		A88B42872843BF2C0006FE4B /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B42862843BF2C0006FE4B /* BooksViewController.swift */; };
+		A88B428A2843C3F00006FE4B /* BooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B42892843C3F00006FE4B /* BooksService.swift */; };
+		A88B428D2843C6470006FE4B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B428C2843C6470006FE4B /* Book.swift */; };
+		A88B428F2843D9790006FE4B /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B428E2843D9790006FE4B /* BooksView.swift */; };
+		A88B42952843DA400006FE4B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B42942843DA400006FE4B /* Protocols.swift */; };
+		A88B42982843DA4C0006FE4B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B42972843DA4C0006FE4B /* Extension.swift */; };
+		A88B429A2843DF550006FE4B /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B42992843DF550006FE4B /* BookCell.swift */; };
+		A88B429C2843E9420006FE4B /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B429B2843E9420006FE4B /* BookViewModel.swift */; };
+		A88B429E284401600006FE4B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88B429D284401600006FE4B /* Enums.swift */; };
+		A8A8D52C2844FD870016C841 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A8D52B2844FD860016C841 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28A2802B021A6D19217A66B5 /* Pods-BookStore_PedroOrtiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_PedroOrtiz.debug.xcconfig"; path = "Target Support Files/Pods-BookStore_PedroOrtiz/Pods-BookStore_PedroOrtiz.debug.xcconfig"; sourceTree = "<group>"; };
 		75169A8166FC1CACDE7850EB /* Pods_BookStore_PedroOrtiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStore_PedroOrtiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4A4D99D5C9965C34880675 /* Pods-BookStore_PedroOrtiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore_PedroOrtiz.release.xcconfig"; path = "Target Support Files/Pods-BookStore_PedroOrtiz/Pods-BookStore_PedroOrtiz.release.xcconfig"; sourceTree = "<group>"; };
+		A86272052845453400A2D282 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		A86272072845453E00A2D282 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		A8627209284569ED00A2D282 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		A875074328428F630030A6F6 /* BookStore_PedroOrtiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStore_PedroOrtiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A875074628428F630030A6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A875074828428F630030A6F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A875074A28428F630030A6F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A875074D28428F630030A6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A875074F28428F650030A6F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A875075228428F650030A6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A875075428428F650030A6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88B42862843BF2C0006FE4B /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		A88B42892843C3F00006FE4B /* BooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksService.swift; sourceTree = "<group>"; };
+		A88B428C2843C6470006FE4B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A88B428E2843D9790006FE4B /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		A88B42942843DA400006FE4B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A88B42972843DA4C0006FE4B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A88B42992843DF550006FE4B /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		A88B429B2843E9420006FE4B /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		A88B429D284401600006FE4B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A8A8D52B2844FD860016C841 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +72,26 @@
 				28A2802B021A6D19217A66B5 /* Pods-BookStore_PedroOrtiz.debug.xcconfig */,
 				7F4A4D99D5C9965C34880675 /* Pods-BookStore_PedroOrtiz.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A86272032845451100A2D282 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				A88B42862843BF2C0006FE4B /* BooksViewController.swift */,
+				A88B428E2843D9790006FE4B /* BooksView.swift */,
+				A88B42992843DF550006FE4B /* BookCell.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		A86272042845451F00A2D282 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A86272052845453400A2D282 /* BookDetailViewController.swift */,
+				A86272072845453E00A2D282 /* BookDetailView.swift */,
+			);
+			path = BookDetail;
 			sourceTree = "<group>";
 		};
 		A875073A28428F630030A6F6 = {
@@ -73,15 +115,56 @@
 		A875074528428F630030A6F6 /* BookStore_PedroOrtiz */ = {
 			isa = PBXGroup;
 			children = (
+				A88B42922843DA240006FE4B /* Utils */,
+				A88B428B2843C63E0006FE4B /* Model */,
+				A88B42882843C3D90006FE4B /* ViewModel */,
+				A88B42852843BF1A0006FE4B /* View */,
 				A875074628428F630030A6F6 /* AppDelegate.swift */,
 				A875074828428F630030A6F6 /* SceneDelegate.swift */,
-				A875074A28428F630030A6F6 /* ViewController.swift */,
 				A875074C28428F630030A6F6 /* Main.storyboard */,
 				A875074F28428F650030A6F6 /* Assets.xcassets */,
 				A875075128428F650030A6F6 /* LaunchScreen.storyboard */,
 				A875075428428F650030A6F6 /* Info.plist */,
 			);
 			path = BookStore_PedroOrtiz;
+			sourceTree = "<group>";
+		};
+		A88B42852843BF1A0006FE4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A86272042845451F00A2D282 /* BookDetail */,
+				A86272032845451100A2D282 /* Books */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A88B42882843C3D90006FE4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A88B42892843C3F00006FE4B /* BooksService.swift */,
+				A88B429B2843E9420006FE4B /* BookViewModel.swift */,
+				A8627209284569ED00A2D282 /* BookDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A88B428B2843C63E0006FE4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A88B428C2843C6470006FE4B /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A88B42922843DA240006FE4B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A88B42942843DA400006FE4B /* Protocols.swift */,
+				A88B42972843DA4C0006FE4B /* Extension.swift */,
+				A88B429D284401600006FE4B /* Enums.swift */,
+				A8A8D52B2844FD860016C841 /* CustomImageView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DEB9857EC0A18D64E5781137 /* Frameworks */ = {
@@ -103,6 +186,7 @@
 				A875073F28428F630030A6F6 /* Sources */,
 				A875074028428F630030A6F6 /* Frameworks */,
 				A875074128428F630030A6F6 /* Resources */,
+				FA5E54C921D26B586C3ED0D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +244,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		FA5E54C921D26B586C3ED0D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookStore_PedroOrtiz/Pods-BookStore_PedroOrtiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookStore_PedroOrtiz/Pods-BookStore_PedroOrtiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookStore_PedroOrtiz/Pods-BookStore_PedroOrtiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FDF4EDE5CE6E8A28F2AA4406 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,9 +290,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A875074B28428F630030A6F6 /* ViewController.swift in Sources */,
+				A88B429A2843DF550006FE4B /* BookCell.swift in Sources */,
+				A8A8D52C2844FD870016C841 /* CustomImageView.swift in Sources */,
+				A88B428A2843C3F00006FE4B /* BooksService.swift in Sources */,
+				A86272062845453400A2D282 /* BookDetailViewController.swift in Sources */,
+				A88B428F2843D9790006FE4B /* BooksView.swift in Sources */,
+				A88B42952843DA400006FE4B /* Protocols.swift in Sources */,
+				A86272082845453E00A2D282 /* BookDetailView.swift in Sources */,
 				A875074728428F630030A6F6 /* AppDelegate.swift in Sources */,
+				A88B429C2843E9420006FE4B /* BookViewModel.swift in Sources */,
 				A875074928428F630030A6F6 /* SceneDelegate.swift in Sources */,
+				A88B428D2843C6470006FE4B /* Book.swift in Sources */,
+				A862720A284569ED00A2D282 /* BookDetailViewModel.swift in Sources */,
+				A88B42872843BF2C0006FE4B /* BooksViewController.swift in Sources */,
+				A88B42982843DA4C0006FE4B /* Extension.swift in Sources */,
+				A88B429E284401600006FE4B /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
